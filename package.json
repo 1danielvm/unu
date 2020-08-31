@@ -1,0 +1,70 @@
+{
+  "name": "unu",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "standard",
+    "fix": "standard --fix"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "husky": "^4.2.5",
+    "react-redux": "^7.2.1",
+    "react-test-renderer": "^16.13.1",
+    "redux": "^4.0.5",
+    "standard": "^14.3.4"
+  },
+  "standard": {
+    "ignore": [
+      "build/*",
+      "serviceWorker.js",
+      "src/__test__/*",
+      "src/__mocks__/*",
+      "src/mocks/*"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|svg|gif)$": "<rootDir>/src/__mocks__/fileMock.js",
+      "\\.(scss|css|sass)$": "<rootDir>/src/__mocks__/styleMock.js"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+//contains all the CSS that handles the layout
+
+.getStarted-grid {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/images/get-started-bg.png');
+}
+.section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
